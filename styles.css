@@ -2,3 +2,75 @@
     margin: 0;
     padding: 0;
 }
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #EAE0CC;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: transform 0.3s ease
+}
+
+a:hover {
+    transform: scale(1.05);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 2fr 2fr;
+}
+
+.header {
+    border: solid 2px red;
+}
+
+.sidebar {
+    display: grid;
+    grid-row: 1 / 4;
+    align-content: start;
+    gap: 40px;
+    font-family: 'Montserrat';
+    background-color: #4D6A6D;
+    color: #EAE0CC;
+}
+
+.main-content {
+    border: solid 2px blue;
+    grid-row: 2 / 4;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding-top: 16px;
+    cursor: default;
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px;
+    padding-left: 7px;
+}
+
+.sidebar-icon {
+    width: 16px;
+    height: 16px;
+    padding-left: 23px;
+}
+
+.sidebar-text {
+    display: inline-block;
+}
+
+.sidebar-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
