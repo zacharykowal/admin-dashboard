@@ -84,6 +84,7 @@ a:hover {
     display: flex;
     gap: 15px;
     align-items: center;
+    padding-top: 5px;
 }
 
 .header-welcome img {
@@ -104,6 +105,39 @@ a:hover {
     font-size: 18px;
 }
 
+.header-search {
+    display: flex;
+    align-items: center;
+    padding-right: 50px;
+}
+
+.header-search button {
+    border: none;
+    background-color: #EAE0CC;
+    align-self: flex-end;
+}
+
+form {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    gap: 20px;
+}
+
+#search-bar {
+    border: none;
+    border-radius: 15px;
+    padding: 5px 12px;
+    line-height: 5px;
+    background-color: #C9ADA1;
+    color: #4D6A6D;
+    width: 95%;
+}
+
+#search-bar:focus {
+    outline: none;
+}
+
 .sidebar {
     display: grid;
     grid-row: 1 / -1;
@@ -116,6 +150,7 @@ a:hover {
 
 .main-content {
     grid-row: 2 / -1;
+    background-color: #C9ADA1;
 }
 
 .logo {
