@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
 
 ul {
@@ -151,6 +151,91 @@ form {
 .main-content {
     grid-row: 2 / -1;
     background-color: #C9ADA1;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    padding: 35px;
+}
+
+.left-grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 8fr 8fr 8fr;
+}
+
+.main-content-header-text {
+    grid-column: 1 / 3;
+    color: #4D6A6D;
+    font-weight: bold;
+}
+
+.right-grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 12fr 1fr 12fr;
+}
+
+.card {
+    background-color: #EAE0CC;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    border-left: 12px solid #4D6A6D;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card-list li {
+    padding: 10px 0;
+}
+
+.card-list li:not(:last-child) {
+    border-bottom: 1px solid #4D6A6D; 
+}
+
+.right {
+    padding: 30px;
+    border: none;
+}
+
+.trending {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.trending-item {
+    display: flex;
+    gap: 12px;
+}
+
+.trending-item-text {
+    display: flex;
+    gap: 3px;
+    flex-direction: column;
+}
+
+.card-text-header {
+    font-size: 16px;
+    font-weight: bolder;
+    color: #4D6A6D;
+}
+
+.card-text-desc {
+    font-size: 14px;
+    color: #798478;
+    font-weight: bold;
+}
+
+.card-icons {
+    margin-top: auto;
+    margin-left: auto;
+    display: flex;
+    gap: 20px;
 }
 
 .logo {
